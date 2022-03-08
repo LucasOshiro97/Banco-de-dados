@@ -1,0 +1,23 @@
+Banco de dados com MySQL
+
+Aula 1
+
+Origem dos bancos de dados
+
+Arquivos guardam tabelas, tabelas armazenam registros
+
+arquivo de acesso sequencial - sao acessado de forma sequencial
+arquivo de acesso direto - sao acessado de forma direta 
+
+banco de dados é divida em 4 partes
+
+base de dados - estrutura de todo o banco de dados
+sistema gerenciador(SGBD) - sistema que gerencia os dados
+linguagem de expoloração - representa um so linguagem de programaçao para ser aplicada
+programas adicionais - coisas adicionais
+
+SQL - Structured Query Language -> linguagem de consulta que da uma resposta de solicitaçao 
+				   	
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
