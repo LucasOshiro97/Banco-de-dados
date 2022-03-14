@@ -20,4 +20,128 @@ SQL - Structured Query Language -> linguagem de consulta que da uma resposta de 
 				   	
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+Aula 2
+
+Instalando o MySQL com WAMP
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Aula 3
+
+Instalando o XAMPP
+
+video feito para quem nao conseguiu executar a instalaçao do WAMP
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Aula 4
+
+Criando o primeiro Banco de dados
+
+Em um mesmo container tem que dentro dele as mesma caracteristicas, se tiver caracteristicas diferentes 
+tem que colocar dentro de outro container
+
+tabelas guarda de coisas que tem caracteristicas semelhantes
+
+ 		*criar o banco de dados 
+
+			create database nome ;
+
+
+para aparecer o banco de dados na parte de schemas, basta atualizar no icone do lado de schemas
+
+Banco de dados contem tabelas, tabelas contem registros e registros sao compostas por campos
+
+
+		*criar tabelas
+
+			create table nome();
+
+, -> separador
+
+
+tipos primitivos:
+
+numeros: subdivisoes -> inteiro, real, lógico 
+data/tempo:
+literal: subdivisoes -> caractere, texto, binário, coleção
+espacial:
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Aula 5
+
+Melhorando a estrutura do banco de dados
+
+
+ex1
+melhorar o create database:
+
+drop database nome; -> apagaum banco de dados
+
+
+constrants:
+
+default character set utf8
+default collate utf8_general_ci;       isso serve para trabalhar na lingua do continente sul americano
+
+
+Estrutura da tabela
+
+not null ->  obrigar a colocar no campo algo a ser registrado tipo o nome  
+enum() -> pode fazer voce dedinir a estrutra de uma forma um pouco mais rigida
+decimal() -> (5,2)   -> 5=total de casas, 2=total de depois da virgula -exemplo: 134,45
+									  134,45-refere-se ao 5 e 45 refere-se ao 2
+
+
+chave primaria: ela faz com que não tenha repetiçao das informaçoes que serão registradas    		
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Aula 6
+
+Inserindo dados na tabela (insert into)
+
+ex2
+SQL - SEPARADA POR CATEGORIA, comandos que classificao de acordo com essa categoria
+	todo sql que faz parte da estrutura na definiçao de estrutura do banco de dados
+
+
+create table e create database serve para definiçoes no banco de dados(na tabela),um comando DDL 
+ 
+DDL - data definition language ou linguagem de definiçao de dados
+
+
+criar o comando para definir dados:
+
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+
+values
+('default','Godofredo','1984-01-02','M','78.5','1.83','Brasil');
+
+default: padrao, ja esta com auto numeraçao, vai continuar colocando 
+	os numeros em ordem
+
+
+
+*Para inserir varios: 
+
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+
+values
+(default,'Ana','1975-12-22','F','52.3','1.45','EUA'),
+(default,'Pedro',2000-07-15,'M','52.3''1.7','Brasil'),
+(default,'Maria','1999-05-30','F','75.9','1.7','Portugal');
+
+select * from pessoas;  
+
+DML - data manipulation language, linguagem de manipulaçao de dados, um deles é (inser into)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
